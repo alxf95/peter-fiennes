@@ -2,8 +2,11 @@
 .navbar {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   background: white;
-  transition: all 0.3s ease;
+  position: fixed;
+  // transition: all 0.3s ease;
+  z-index: 1;
   height: 64px;
+  width: 100vw;
   font-family: "PT Sans", sans-serif;
   padding: 0px 50px;
   display: flex;
@@ -14,10 +17,10 @@
 .navbar-home {
   letter-spacing: 0.8px;
   font-size: 24px;
-  margin-top: 10px;
-  color: #171717;
+  margin-top: -4px;
+  color: #272727;
   &:hover {
-    color: #171717;
+    color: #272727;
     text-decoration: none;
   }
 }
@@ -33,47 +36,53 @@
 /* Basic navbar item */
 .navbar-item {
   cursor: pointer;
-  padding: 0 36px;
+  padding: 7.5px 18px;
+  margin: 0px 20px;
 }
 
 /* Navbar link */
 .navbar-link {
-  color: #171717;
+  color: #272727;
   font-size: 17px;
   letter-spacing: 1.5px;
 }
+
+.navbar-link.active {
+  border-bottom: 2px solid #272727;
+}
+
 .navbar-link:hover {
   color: #da552f;
   text-decoration: none;
 }
 
 /* Dropdown menu */
-.navbar-dropdown-menu {
-  margin-top: 15px;
-  box-shadow: 1px 1px 4px #E6E6E6;
-  border-color: #E6E6E6;
-}
-.navbar-dropdown-menu li > a {
-  transition: color 0.3s ease;
-  font-weight: lighter !important;
-  color: #999999 !important;
-  font-size: 15px !important;
-  line-height: 22px !important;
-  padding: 10px 20px;
-}
-.navbar-dropdown-menu li > a:hover {
-  background: transparent !important;
-  color: black !important;
-}
-.navbar-dropdown-menu:before {
-  content: ' ';
-  height: 10px;
-  width: 10px;
-  position: absolute;
-  right: 10px;
-  top: -6px;
-  background-color: white;
-  transform: rotate(45deg);
-  border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
-}
+// .navbar-dropdown-menu {
+//   margin-top: 15px;
+//   box-shadow: 1px 1px 4px #E6E6E6;
+//   border-color: #E6E6E6;
+// }
+// .navbar-dropdown-menu li > a {
+//   transition: color 0.3s ease;
+//   font-weight: lighter !important;
+//   color: #999999 !important;
+//   font-size: 15px !important;
+//   line-height: 22px !important;
+//   padding: 10px 20px;
+// }
+// .navbar-dropdown-menu li > a:hover {
+//   background: transparent !important;
+//   color: black !important;
+// }
+// .navbar-dropdown-menu:before {
+//   content: ' ';
+//   height: 10px;
+//   width: 10px;
+//   position: absolute;
+//   right: 10px;
+//   top: -6px;
+//   background-color: white;
+//   transform: rotate(45deg);
+//   border-left: 1px solid #E6E6E6;
+//   border-top: 1px solid #E6E6E6;
+// }

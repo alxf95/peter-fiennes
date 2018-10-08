@@ -1,11 +1,13 @@
 .home {
-  padding-top: 80px;
+  padding-top: 134px;
   background-color: #FBFBFB;
-  min-height: calc(100vh - 64px);
+  min-height: 100vh;
+  color: #272727;
 }
 
 .home-content {
   display: flex;
+  justify-content: space-between;
 }
 
 #about-me {
@@ -18,12 +20,11 @@
   font-family: "Segoe UI", sans-serif;
   font-weight: lighter;
   font-size: 24px;
-  margin-top: 22px;
+  margin: 32px;
 }
 
 #pete-pic {
-  margin-left: 135px;
-  margin-top: 14px;
-  border-radius: 10px;
+  margin: 36px 45px;
+  border-radius: 1px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
