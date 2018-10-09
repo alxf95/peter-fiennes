@@ -1,0 +1,12 @@
+.buy-button {
+  padding: 8px 24px;
+  width: 160px;
+  background-color: transparent;
+  border: 2px solid rgba(255,255,255,0.9);
+  text-align: center;
+  color: white;
+  &:hover {
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+  }
+}
