@@ -3,19 +3,25 @@ h1 {
   font-size: 36px;
   letter-spacing: 9px;
   text-align: center;
-  color: white;
+  color: rgba(255,255,255,0.9);
 }
 
 .oaaat {
   background-color: #578D87;
   min-height: 100vh;
-  padding: 110px 80px 30px 80px;
-  color: white;
+  padding: 110px 80px 40px 80px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 17px;
+  color: rgba(255,255,255,0.9);
+  letter-spacing: 0.8px;
+  h1 {
+    color: white;
+  }
 }
 
 .oaaat-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .oaaat-left {
@@ -30,16 +36,39 @@ h1 {
   text-align: justify;
 }
 
+.oaaat-right {
+  width: 600px;
+}
+
 .right-separator {
-  width: 504px;
-  margin: 32px 48px;
+  width: 520px;
+  margin: 32px 40px;
   border: 1px solid rgba(255,255,255,0.9);
+  flex-grow: 1;
+}
+
+.reviews-content {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.review-content {
+  width: 280px;
+}
+
+.reviews-authors {
+  display: flex;
+  justify-content: space-around;
+}
+
+.review-author {
+  margin-right: 16px;
 }
 
 .book-cover {
-  margin: 35px 60px;
-  width: 270px;
-  height: 420px;
+  margin: 35px 0px;
+  width: 256px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
