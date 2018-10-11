@@ -24,8 +24,15 @@
   margin: 32px;
 }
 
+.pic-div {
+  display: flex;
+  justify-content: center;
+}
+
 #pete-pic {
-  margin: 28px 85px;
+  margin: 28px 35px;
   border-radius: 1px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 400px;
 }

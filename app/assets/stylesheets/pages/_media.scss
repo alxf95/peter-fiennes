@@ -1,0 +1,22 @@
+.media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+}
+
+#youtube {
+  width: 840px;
+  height: 472.8px;
+  margin-bottom: 24px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+#youtube-description {
+  width: 840px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  text-align: justify;
+}

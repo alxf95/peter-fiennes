@@ -55,7 +55,7 @@ h1 {
 
 .right-separator {
   width: calc(100% - 80px);
-  margin: 56px 0px;
+  margin: 48px 0px;
   border: 1px solid rgba(255,255,255,0.9);
 }
 
@@ -84,6 +84,7 @@ h1 {
   padding: 50px 80px 40px 80px;
   font-family: "Segoe UI", sans-serif;
   font-size: 17px;
+  font-weight: lighter;
   color: #272727;
   letter-spacing: 0.8px;
   h1, {
@@ -91,6 +92,9 @@ h1 {
   }
   .right-separator {
     border: 1px solid #272727;
-    opacity: 0.8;
+    opacity: 0.6;
+  }
+  .buy-button {
+    font-weight: normal;
   }
 }
