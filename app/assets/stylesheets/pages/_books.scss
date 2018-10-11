@@ -30,6 +30,7 @@ h1 {
 
 .book-content {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -53,17 +54,20 @@ h1 {
 
 .right-separator {
   width: calc(100% - 50px);
-  margin: 32px;
+  margin: 56px 0px;
   border: 1px solid rgba(255,255,255,0.9);
 }
 
 .reviews {
   display: flex;
   text-align: center;
+  justify-content: space-between;
+  // flex-wrap: wrap;
+  width: 100%;
 }
 
 .review-content {
-  margin: 0px 30px 16px 30px;
+  margin: 0px 10px 16px 10px;
 }
 
 
