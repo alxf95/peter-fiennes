@@ -6,7 +6,7 @@ h1 {
   color: rgba(255,255,255,0.9);
 }
 
-.oaaat {
+#oaaat {
   background-color: #578D87;
   min-height: 100vh;
   padding: 110px 80px 40px 80px;
@@ -19,52 +19,53 @@ h1 {
   }
 }
 
-.oaaat-content {
-  display: flex;
-  justify-content: center;
+#oaaat-button {
+  border: 2px solid rgba(255,255,255,0.9);
+  color: rgba(255,255,255,0.9);
+  opacity: 1;
+  &:hover {
+    color: rgba(255,255,255,0.6);
+  }
 }
 
-.oaaat-left {
+.book-content {
+  display: flex;
+  width: 100%;
+}
+
+.book-left {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.oaaat-description {
+.book-description {
   margin-top: 40px;
-  width: 600px;
   text-align: justify;
 }
 
-.oaaat-right {
-  width: 600px;
+.book-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 40px 0px 20px;
 }
 
 .right-separator {
-  width: 520px;
-  margin: 32px 40px;
+  width: calc(100% - 50px);
+  margin: 32px;
   border: 1px solid rgba(255,255,255,0.9);
-  flex-grow: 1;
 }
 
-.reviews-content {
+.reviews {
   display: flex;
   text-align: center;
-  justify-content: space-around;
 }
 
 .review-content {
-  width: 280px;
+  margin: 0px 30px 16px 30px;
 }
 
-.reviews-authors {
-  display: flex;
-  justify-content: space-around;
-}
-
-.review-author {
-  margin-right: 16px;
-}
 
 .book-cover {
   margin: 35px 0px;
@@ -72,13 +73,18 @@ h1 {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.twwg {
+#twwg {
   background-color: #BFDCE6;
   min-height: calc(100vh - 60px);
-  padding: 80px;
-  padding-top: 50px;
-  color: white;
-  h1 {
+  padding: 50px 80px 40px 80px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 17px;
+  color: #272727;
+  h1, {
     color: #272727;
+  }
+  .right-separator {
+    border: 1px solid #272727;
+    opacity: 0.8;
   }
 }
