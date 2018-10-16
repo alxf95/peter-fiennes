@@ -1,14 +1,14 @@
 .home {
   padding-top: 134px;
   background-color: #FBFBFB;
-  min-height: 100vh;
   color: #272727;
   letter-spacing: 1px;
+  min-height: 100vh;
 }
 
-.home-content {
+.home-top-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #about-me {
@@ -35,4 +35,10 @@
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   width: 400px;
   height: 400px;
+}
+
+.home-bottom-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
