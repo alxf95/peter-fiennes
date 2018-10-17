@@ -14,14 +14,14 @@
   justify-content: space-between;
 }
 
-.navbar-home {
+#navbar-home {
   letter-spacing: 0.8px;
   font-size: 24px;
   height: 40px;
   // margin-top: -4px;
-  color: #272727;
+  color: #3a3a3a;
   &:hover {
-    color: #272727;
+    color: #3a3a3a;
     text-decoration: none;
   }
 }
@@ -43,13 +43,17 @@
 
 /* Navbar link */
 .navbar-link {
-  color: #272727;
+  color: #3a3a3a;
   font-size: 17px;
   letter-spacing: 1.5px;
 }
 
+#oaaat_click:hover, #media_click:hover, #contact_click:hover {
+  color: #da552f;
+}
+
 .navbar-link.active {
-  border-bottom: 2px solid #272727;
+  border-bottom: 2px solid #3a3a3a;
 }
 
 .navbar-link:hover {

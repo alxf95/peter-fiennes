@@ -1,4 +1,4 @@
-<div class="home">
+<div id="home-about">
   <div class="container">
     <div class="row home-top-content">
       <div class="col-xs-12 col-md-6">
@@ -10,4 +10,97 @@
       </div>
     </div>
   </div>
+  <div class="arrow-container bounce">
+    <%= link_to "#media" do %>
+      <%= image_tag "down", id: "arrow" %>
+    <% end %>
+  </div>
 </div>
+<div id="oaaat">
+  <h1>OAK AND ASH AND THORN</h1>
+  <div class="container">
+    <div class="row">
+      <div class="book-content">
+        <div class="book-left col-xs-12 col-md-4">
+          <%= image_tag "oaaat.jpg", class: "book-cover" %>
+          <%= link_to "Buy Now", "https://www.amazon.co.uk/Oak-Ash-Thorn-Ancient-Forests/dp/1786071665", class: "buy-button", id: "oaaat-button", target: :_blank %>
+        </div>
+        <div class="col-xs-12 col-md-8">
+          <div class="book-right">
+            <p class="book-description">The magic and mystery of the woods are embedded in culture, from ancient folklore to modern  literature. They offer us refuge: a place to play, a place to think. They are the generous providers of timber and energy. They let us dream of other ways of living. Yet we now face a future where taking a walk in the woods is consigned to the tales we tell our children.<br><br>Immersing himself in the beauty of woodland Britain, Peter Fiennes explores our long relationship with the woods and the sad and violent story of how so many have been lost. Just as we need them, our woods need us too. But who, if anyone, is looking out for them?</p>
+            <hr class="right-separator">
+            <div class="reviews row">
+              <div class="review col-xs-12 col-md-4 left-review">
+                <p class="review-content">"A tender hymn to the trees one man's walk in the woods can inspire a generation"</p>
+                <p class="review-author"><em>Paul Evans</em></p>
+              </div>
+              <div class="review col-xs-12 col-md-4">
+                <p class="review-content">"Extraordinary... Set to become a classic of the genre"</p>
+                <p class="review-author"><em>Observer</em></p>
+              </div>
+              <div class="review col-xs-12 col-md-4 right-review">
+                <p class="review-content">"A wonderful wander into the woods that explores our... connections with the trees"</p>
+                <p class="review-author"><em>Rob Cowen</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="twwg">
+  <h1>TO WAR WITH GOD</h1>
+  <div class="container">
+    <div class="row">
+      <div class="book-content">
+        <div class="book-left col-xs-12 col-md-4">
+          <%= image_tag "twwg.png", class: "book-cover" %>
+          <%= link_to "Buy Now", "https://www.amazon.co.uk/War-God-Army-Chaplain-Faith/dp/178057553X", class: "buy-button", target: :_blank %>
+        </div>
+        <div class="col-xs-12 col-md-8">
+          <div class="book-right">
+            <p class="book-description">To War With God is the moving account of Anglican chaplain Edward Montmorency 'Monty' Guilford's service in the First World War. Written by his grandson, it draws on first-hand material, including Monty's diaries, photographs and letters, tracing his journey from his first days on the Somme through the mud and terror of Cambrai to Belgium and the Army of Occupation. Along the way, Monty won the MC but lost his faith.<br><br>The book also looks at the war lives of four men who had a powerful influence on Monty: his beloved brother-in-law Jack Bigger, who went missing after only days at the Front; his friend 'Pullthrough', a poet and author of scintillating letters; Private Joseph Bateman, executed for desertion, who spent his last night with Monty; and Dick Sheppard, the pacifist preacher who helped Monty back to health after the war.</p>
+            <hr class="right-separator">
+            <div class="reviews row">
+              <div class="review col-xs-12 col-md-4 left-review">
+                <p class="review-content">"A haunting biography"</p>
+                <p class="review-author"><em>The Scotsman</em></p>
+              </div>
+              <div class="review col-xs-12 col-md-4">
+                <p class="review-content">"Deeply moving, thoughtful, true and often funny"</p>
+                <p class="review-author"><em>The Tablet</em></p>
+              </div>
+              <div class="review col-xs-12 col-md-4 right-review">
+                <p class="review-content">"Moving and poignant"</p>
+                <p class="review-author"><em>Church Times</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="media">
+  <div class="container">
+    <h1>MEDIA</h1>
+    <div class="media-content row">
+      <div class="youtube-container col-xs-12 col-md-7">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Snl_i01dGKI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="youtube"></iframe>
+        <p id="youtube-description">A short history of the woods of Britain in 2 minutes and 22 seconds set to the the song "You'll Lose A Good Thing" by Barbara Lynn</p>
+      </div>
+      <div class="twitter-container col-xs-12 col-md-5">
+        <a class="twitter-timeline" data-width="400" data-height="400" data-theme="light" href="https://twitter.com/pfiennes?ref_src=twsrc%5Etfw">Tweets by pfiennes</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $("#arrow").on("click", function(event){
+    $('html, body').animate({
+      scrollTop: $("#media").offset().top
+    }, 1000);
+  });
+</script>
