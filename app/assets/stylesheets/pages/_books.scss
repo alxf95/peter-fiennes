@@ -11,11 +11,15 @@ h1 {
   min-height: 100vh;
   padding: 110px 0px 20px 0px;
   font-family: "Segoe UI", sans-serif;
+  font-weight: lighter;
   font-size: 17px;
   color: rgba(255,255,255,0.9);
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   h1 {
     color: white;
+  }
+  .buy-button {
+    font-weight: normal;
   }
 }
 
@@ -25,6 +29,7 @@ h1 {
   opacity: 1;
   &:hover {
     color: rgba(255,255,255,0.6);
+    border: 2px solid rgba(255,255,255,0.8);
   }
 }
 
@@ -82,7 +87,7 @@ h1 {
 }
 
 .book-cover {
-  margin: 35px 0px;
+  margin: 35px 10px;
   width: 256px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -95,7 +100,7 @@ h1 {
   font-size: 17px;
   font-weight: lighter;
   color: #272727;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   h1, {
     color: #272727;
   }
