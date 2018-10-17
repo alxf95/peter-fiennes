@@ -14,13 +14,17 @@ h1 {
   font-size: 17px;
   color: rgba(255,255,255,0.9);
   letter-spacing: 1.5px;
-  h1 {
-    color: white;
-  }
+  // position: relative;
   .buy-button {
     font-weight: normal;
   }
 }
+
+// #oaaat-header {
+//   color: white;
+//   position: absolute;
+//   top: -64px;
+// }
 
 #oaaat-button {
   border: 2px solid rgba(255,255,255,0.9);

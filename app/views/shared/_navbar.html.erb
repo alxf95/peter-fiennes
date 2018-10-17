@@ -3,11 +3,11 @@
   <%= link_to "Peter Fiennes", root_path, id: "navbar-home" %>
   <!-- Right Navigation -->
   <div class="navbar-right d-none d-md-block">
-    <a class="navbar-item navbar-link", id="oaaat_click">Books</a>
+    <a class="navbar-item navbar-link", id="oaaat-link">Books</a>
     <%#= link_to "Books", books_path, class: "navbar-item navbar-link #{'active' if params[:action] == 'books'}" %>
-    <a class="navbar-item navbar-link", id="media_click">Media</a>
+    <a class="navbar-item navbar-link", id="media-link">Media</a>
     <%#= link_to "Media", media_path, class: "navbar-item navbar-link #{'active' if params[:action] == 'media'}" %>
-    <a class="navbar-item navbar-link", id="contact_click">Contact</a>
+    <a class="navbar-item navbar-link", id="contact-link">Contact</a>
   </div>
   <!-- Dropdown appearing on mobile only -->
 
@@ -16,7 +16,7 @@
       <i class="fas fa-bars dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       </i>
       <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu" aria-labelled-by="dropdownMenuButton">
-        <li><a class="dropdown-item" href="/books">Books</a></li>
+        <li><a class="dropdown-item" id="oaaat_click">Books</a></li>
         <li><a class="dropdown-item" href="/media">Media</a></li>
         <li><a class="dropdown-item" href="/contact">Contact</a></li>
       </div>
@@ -34,7 +34,7 @@
   });
 </script>
 <script>
-  $("#oaaat_click").on("click", function(event){
+  $("#oaaat-link").on("click", function(event){
     console.log(event)
     $('html, body').animate({
       scrollTop: $("#oaaat").offset().top
@@ -42,7 +42,7 @@
   });
 </script>
 <script>
-  $("#media_click").on("click", function(event){
+  $("#media-link").on("click", function(event){
     console.log(event)
     $('html, body').animate({
       scrollTop: $("#media").offset().top
