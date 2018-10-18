@@ -79,6 +79,10 @@
   width: 10px;
 }
 
+.dropdown-toggle, .dropdown-item {
+  cursor: pointer;
+}
+
 .navbar-dropdown-menu {
   letter-spacing: 1px;
   margin-top: 15px;

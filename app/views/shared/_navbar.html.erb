@@ -15,9 +15,10 @@
       <i class="fas fa-bars dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       </i>
       <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu" aria-labelled-by="dropdownMenuButton">
-        <li><a class="dropdown-item" id="oaaat_click">Books</a></li>
-        <li><a class="dropdown-item" href="/media">Media</a></li>
-        <li><a class="dropdown-item" href="/contact">Contact</a></li>
+        <li><a class="dropdown-item" id="oaaat-link-dropdown">Books</a></li>
+        <li><a class="dropdown-item" id="media-link-dropdown">Media</a></li>
+        <li><a class="dropdown-item" id="about-link-dropdown">About</a></li>
+        <li><a class="dropdown-item" id="contact-link-dropdown">Contact</a></li>
       </div>
     </div>
   </div>
@@ -33,7 +34,7 @@
   });
 </script>
 <script>
-  $("#oaaat-link").on("click", function(event){
+  $("#oaaat-link, #oaaat-link-dropdown").on("click", function(event){
     console.log(event)
     $('html, body').animate({
       scrollTop: $("#oaaat-anchor").offset().top
@@ -41,7 +42,7 @@
   });
 </script>
 <script>
-  $("#media-link").on("click", function(event){
+  $("#media-link, #media-link-dropdown").on("click", function(event){
     console.log(event)
     $('html, body').animate({
       scrollTop: $("#media-anchor").offset().top
@@ -49,10 +50,18 @@
   });
 </script>
 <script>
-  $("#about-link").on("click", function(event){
+  $("#about-link, #about-link-dropdown").on("click", function(event){
     console.log(event)
     $('html, body').animate({
       scrollTop: $("#about-anchor").offset().top
+    }, 1000);
+  });
+</script>
+<script>
+  $("#contact-link, #contact-link-dropdown").on("click", function(event){
+    console.log(event)
+    $('html, body').animate({
+      scrollTop: $("#contact-anchor").offset().top
     }, 1000);
   });
 </script>
