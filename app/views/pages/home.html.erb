@@ -1,22 +1,17 @@
-<div id="home-about">
-  <div class="container">
-    <div class="row home-top-content">
-      <div class="col-xs-12 col-md-6">
-        <h2 id="about-me">About Me</h2>
-        <p id="about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class ="pic-div col-xs-12 col-sm-6">
-        <%= image_tag "pete.jpg", id: "pete-pic" %>
-      </div>
+<div class="banner" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.2) 50%), url(<%= image_path 'woods.jpg' %>);">
+  <a id="banner-anchor"></a>
+  <div class="container banner-flexbox">
+    <div class="banner-content">
+      <h1>PETER FIENNES</h1>
+      <p>Writer extraordinaire</p>
     </div>
-  </div>
-  <div class="arrow-container bounce">
-    <%= link_to "#media" do %>
-      <%= image_tag "down", id: "arrow" %>
-    <% end %>
+    <div class="arrow-container bounce">
+      <%= image_tag "white-arrow.png", class: "anchor", id: "arrow" %>
+    </div>
   </div>
 </div>
 <div id="oaaat">
+  <a class="anchor", id="oaaat-anchor"></a>
   <h1>OAK AND ASH AND THORN</h1>
   <div class="container">
     <div class="row">
@@ -83,6 +78,7 @@
   </div>
 </div>
 <div id="media">
+  <a class="anchor" id="media-anchor"></a>
   <div class="container">
     <h1>MEDIA</h1>
     <div class="media-content row">
@@ -96,11 +92,25 @@
     </div>
   </div>
 </div>
+<div id="about">
+  <a class="anchor", id="about-anchor"></a>
+  <div class="container">
+    <div class="row", id="about-container">
+      <div class="col-xs-12 col-md-6">
+        <h2 id="about-me">About Me</h2>
+        <p id="about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class ="pic-div col-xs-12 col-sm-6">
+        <%= image_tag "pete.jpg", id: "pete-pic" %>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
   $("#arrow").on("click", function(event){
     $('html, body').animate({
-      scrollTop: $("#media").offset().top
+      scrollTop: $("#about-anchor").offset().top
     }, 1000);
   });
 </script>

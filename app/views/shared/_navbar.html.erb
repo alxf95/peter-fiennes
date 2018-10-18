@@ -4,9 +4,8 @@
   <!-- Right Navigation -->
   <div class="navbar-right d-none d-md-block">
     <a class="navbar-item navbar-link", id="oaaat-link">Books</a>
-    <%#= link_to "Books", books_path, class: "navbar-item navbar-link #{'active' if params[:action] == 'books'}" %>
     <a class="navbar-item navbar-link", id="media-link">Media</a>
-    <%#= link_to "Media", media_path, class: "navbar-item navbar-link #{'active' if params[:action] == 'media'}" %>
+    <a class="navbar-item navbar-link", id="about-link">About</a>
     <a class="navbar-item navbar-link", id="contact-link">Contact</a>
   </div>
   <!-- Dropdown appearing on mobile only -->
@@ -37,7 +36,7 @@
   $("#oaaat-link").on("click", function(event){
     console.log(event)
     $('html, body').animate({
-      scrollTop: $("#oaaat").offset().top
+      scrollTop: $("#oaaat-anchor").offset().top
     }, 1000);
   });
 </script>
@@ -45,7 +44,15 @@
   $("#media-link").on("click", function(event){
     console.log(event)
     $('html, body').animate({
-      scrollTop: $("#media").offset().top
+      scrollTop: $("#media-anchor").offset().top
+    }, 1000);
+  });
+</script>
+<script>
+  $("#about-link").on("click", function(event){
+    console.log(event)
+    $('html, body').animate({
+      scrollTop: $("#about-anchor").offset().top
     }, 1000);
   });
 </script>
@@ -53,7 +60,16 @@
   $("#navbar-home").on("click", function(event){
     console.log(event)
     $('html, body').animate({
-      scrollTop: $("#home-about").offset().top
+      scrollTop: $("#banner-anchor").offset().top
     }, 1000);
+  });
+</script>
+<script>
+  $(window).scroll(function() {
+    if ($(document).scrollTop() >= $(window).height() - 64) {
+      $('.navbar').addClass('fill');
+    } else {
+      $('.navbar').removeClass('fill');
+    }
   });
 </script>
