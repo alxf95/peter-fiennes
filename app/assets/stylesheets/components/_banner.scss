@@ -24,3 +24,33 @@
     text-align: center;
   }
 }
+
+.arrow-container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 24px;
+  font-size: 22px;
+}
+
+#arrow {
+  width: 32px;
+  cursor: pointer;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  40%, 60% {
+    transform: translateY(-16px);
+  }
+}

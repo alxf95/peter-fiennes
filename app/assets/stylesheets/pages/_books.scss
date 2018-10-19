@@ -3,16 +3,15 @@ h1 {
   font-size: 36px;
   letter-spacing: 9px;
   text-align: center;
-  color: white;
 }
 
 #oaaat {
   background-color: #578D87;
-  padding: 44px 0px 24px 0px;
+  padding: 48px 0px 30px 0px;
   font-family: "Segoe UI", sans-serif;
   font-weight: lighter;
   font-size: 17px;
-  color: white;
+  color: #fcf7f8;
   letter-spacing: 1.5px;
   min-height: calc(100vh - 62px);
   // position: relative;
@@ -21,17 +20,12 @@ h1 {
   }
 }
 
-// #oaaat-anchor {
-//   top: -106px;
-// }
-
 #oaaat-button {
-  border: 2px solid rgba(255,255,255,0.9);
-  color: rgba(255,255,255,0.9);
-  opacity: 1;
+  border: 2px solid #fcf7f8;
+  color: #fcf7f8;
+  opacity: 0.9;
   &:hover {
-    color: rgba(255,255,255,0.6);
-    border: 2px solid rgba(255,255,255,0.8);
+    opacity: 0.6;
   }
 }
 
@@ -62,7 +56,8 @@ h1 {
 .right-separator {
   width: calc(100% - 80px);
   margin: 36px 0px 28px 0px;
-  border-bottom: 1px solid white;
+  border: none;
+  border-bottom: 1px solid rgba(252,247,248, 0.7);
 }
 
 .reviews {
@@ -96,19 +91,15 @@ h1 {
 
 #twwg {
   background-color: #BFDCE6;
-  padding: 44px 0px 24px 0px;
+  padding: 48px 0px 30px 0px;
   font-family: "Segoe UI", sans-serif;
   font-size: 17px;
   font-weight: lighter;
   color: #3a3a3a;
   letter-spacing: 1.5px;
   min-height: calc(100vh - 64px);
-  h1, {
-    color: #3a3a3a;
-  }
   .right-separator {
-    border-bottom: 1px solid #272727;
-    opacity: 0.6;
+    border-bottom: 1px solid rgba(58,58,58,0.7);
   }
   .buy-button {
     font-weight: normal;
