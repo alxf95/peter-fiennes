@@ -30,12 +30,12 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 24px;
+  bottom: 25px;
   font-size: 22px;
 }
 
 #arrow {
-  width: 32px;
+  width: 33px;
   cursor: pointer;
 }
 
@@ -51,6 +51,6 @@
     transform: translateY(0);
   }
   40%, 60% {
-    transform: translateY(-16px);
+    transform: translateY(-18px);
   }
 }
