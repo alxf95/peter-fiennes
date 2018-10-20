@@ -100,6 +100,7 @@
   <div class="container">
     <div class="about-container">
       <h1 id="about-header">ABOUT</h1>
+      <a id="contact-underline-anchor"></a>
       <div class="row about-content">
         <div class="col-xs-12 col-md-8">
           <p id="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -123,5 +124,41 @@
     $('html, body').animate({
       scrollTop: $("#about-anchor").offset().top
     }, 1000);
+  });
+</script>
+<script>
+  $(window).scroll(function() {
+  if ($(document).scrollTop() >= document.getElementById('oaaat-anchor').offsetTop - 2 && $(document).scrollTop() < document.getElementById('media-anchor').offsetTop - 2){
+    $('#oaaat-link').addClass('navbar-link-underline');
+  } else {
+    $('#oaaat-link').removeClass('navbar-link-underline');
+  }
+  });
+</script>
+<script>
+  $(window).scroll(function() {
+  if ($(document).scrollTop() >= document.getElementById('media-anchor').offsetTop - 2 && $(document).scrollTop() < document.getElementById('about-anchor').offsetTop - 2){
+    $('#media-link').addClass('navbar-link-underline');
+  } else {
+    $('#media-link').removeClass('navbar-link-underline');
+  }
+  });
+</script>
+<script>
+  $(window).scroll(function() {
+  if ($(document).scrollTop() >= document.getElementById('about-anchor').offsetTop - 2 && $(document).scrollTop() < document.getElementById('contact-underline-anchor').offsetTop){
+    $('#about-link').addClass('navbar-link-underline');
+  } else {
+    $('#about-link').removeClass('navbar-link-underline');
+  }
+  });
+</script>
+<script>
+  $(window).scroll(function() {
+  if ($(document).scrollTop() >= document.getElementById('contact-underline-anchor').offsetTop){
+    $('#contact-link').addClass('navbar-link-underline');
+  } else {
+    $('#contact-link').removeClass('navbar-link-underline');
+  }
   });
 </script>
