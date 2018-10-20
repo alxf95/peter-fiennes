@@ -5,6 +5,9 @@
       <h1>PETER FIENNES</h1>
       <p>Writer extraordinaire</p>
     </div>
+    <div id="about-me-div">
+      <p id="about-me">About me</p>
+    </div>
     <div class="arrow-container bounce">
       <%= image_tag "white-arrow.png", class: "anchor", id: "arrow" %>
     </div>
@@ -116,7 +119,7 @@
 </div>
 
 <script>
-  $("#arrow").on("click", function(event){
+  $("#arrow, #about-me").on("click", function(event){
     $('html, body').animate({
       scrollTop: $("#about-anchor").offset().top
     }, 1000);
