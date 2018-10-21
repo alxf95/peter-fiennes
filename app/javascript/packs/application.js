@@ -44,9 +44,14 @@ if ($(document).scrollTop() >= document.getElementById('contact-underline-anchor
 $(".dropdown").on("click", function(){
   $(".dropdown-toggle").dropdown("toggle");
 });
-$("#oaaat-link, #oaaat-link-dropdown").on("click", function(event){
+$("#oaaat-link, #oaaat-link-dropdown, #oaaat-about-link").on("click", function(event){
   $('html, body').animate({
     scrollTop: $("#oaaat-anchor").offset().top
+  }, 1000);
+});
+$("#twwg-about-link").on("click", function(event){
+  $('html, body').animate({
+    scrollTop: $("#twwg-anchor").offset().top
   }, 1000);
 });
 $("#media-link, #media-link-dropdown").on("click", function(event){
