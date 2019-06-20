@@ -10,7 +10,7 @@
 
 $("#arrow, #about-me").on("click", function(event){
   $('html, body').animate({
-    scrollTop: $("#about-anchor").offset().top
+    scrollTop: $("#oaaat-anchor").offset().top
   }, 1000);
 });
 $(window).scroll(function() {
